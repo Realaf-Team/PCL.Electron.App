@@ -5,7 +5,7 @@ on:
   # 在针对 `main` 分支的推送上运行。如果你
   # 使用 `master` 分支作为默认分支，请将其更改为 `master`
   push:
-    branches: [main]
+    branches: [master]
 
   # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
@@ -43,7 +43,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: bun install # 或 pnpm install / yarn install / bun install
+        run: npm install animate.css&npm install vue&npm install vue-router&npm install xml-js # 或 pnpm install / yarn install / bun install
       - name: Build with Vue
         run: bun run build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Upload artifact
