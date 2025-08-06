@@ -34,16 +34,16 @@ jobs:
       # - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消此区域注释
       #   with:
       #     version: 9
-      # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
+      - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4s
         with:
           node-version: 22
           cache: npm # 或 pnpm / yarn
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: npm install animate.css&npm install vue&npm install vue-router&npm install xml-js # 或 pnpm install / yarn install / bun install
+        run: pnpm install # 或 pnpm install / yarn install / bun install
       - name: Build with Vue
         run: bun run build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Upload artifact
