@@ -32,7 +32,11 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: 9  # 或 latest
+          version: 9
+
+      # ✅ 关键：验证 pnpm 是否安装成功
+      - name: Check pnpm version
+        run: pnpm --version
 
       - name: Install dependencies
         run: pnpm install
