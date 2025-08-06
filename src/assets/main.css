@@ -1,0 +1,36 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.blue,
+.tint {
+  text-decoration: none;
+  color: var(--tint-blue);
+}
+
+body {
+  display: flex;
+  place-items: center;
+}
+
+.button-animated:active {
+  transform: scale(0.9);
+}
+
+.subview {
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* animate.css的属性 */
+:root {
+  --animate-duration: 0.5s;
+}
