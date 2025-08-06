@@ -1,9 +1,9 @@
-# 文件路径：.github/workflows/deploy.yml
+# .github/workflows/deploy.yml
 name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [master]  # 确保与你的分支名一致（main 或 master）
+    branches: [master]
 
   workflow_dispatch:
 
@@ -27,21 +27,23 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'pnpm'  # 启用 pnpm 缓存
+          cache: 'pnpm'
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9  # 或 latest
 
       - name: Install dependencies
-        run: pnpm install  # 使用 pnpm 安装依赖
+        run: pnpm install
 
       - name: Build project
-        run: pnpm run build  # 调用 package.json 中的 "build" 脚本
+        run: pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist  # vite build 默认输出到 dist 目录
+          path: dist
 
   deploy:
     needs: build
@@ -51,5 +53,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
