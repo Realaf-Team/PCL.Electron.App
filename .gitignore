@@ -13,8 +13,7 @@ dist
 dist-ssr
 coverage
 *.local
-package-lock.json
-bun.lock
+push.cmd
 
 /cypress/videos/
 /cypress/screenshots/
