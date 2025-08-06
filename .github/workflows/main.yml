@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]  # 确保与你的分支名一致（main 或 master）
+    branches: [master]  # 确保与你的分支名一致（main 或 master）
 
   workflow_dispatch:
 
