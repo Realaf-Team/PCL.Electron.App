@@ -38,8 +38,8 @@ const openExternal = (url: string) => {
         title="憂鬱のb（￣▽￣）d | SoftOSDev"
         subtitle="PCL.Electron 的作者"
         infoType="about"
-        :btn="{ text: '去我的网站看看 👀', link: 'https://www.borisy.bar/' }"
-        @btn-click="() => openExternal('https://www.borisy.bar/')"
+        :btn="{ text: '去我的网站看看 👀', link: 'https://borisy.bar/' }"
+        @btn-click="() => openExternal('https://borisy.bar/')"
       )
       CardInfoItem(
         icon="https://avatars.githubusercontent.com/u/63146698?v=4"
@@ -50,12 +50,12 @@ const openExternal = (url: string) => {
         @btn-click="() => openExternal('https://www.amagicpear.sbs/')"
       )
       CardInfoItem(
-        :icon="picPCLProto"
-        title="Plain Craft Launcher: Edition Prototype"
+        icon="https://raw.githubusercontent.com/Realaf-Team/PCL.Electron.App/refs/heads/master/pcl-ele.ico"
+        title="Plain Craft Launcher: Edition Electron"
         :subtitle="`当前版本：${version}`"
         infoType="about"
         :btn="{ text: 'GitHub 仓库', link: 'https://github.com/Realaf-Team/PCL.Electron.App' }"
-        @btn-click="() => openExternal('https://github.com/PCL-Community/PCL.Electron.App')"
+        @btn-click="() => openExternal('https://github.com/Realaf-Team/PCL.Electron.App')"
       )
 
   MyCard
@@ -70,7 +70,7 @@ const openExternal = (url: string) => {
         @btn-click="() => openExternal('https://github.com/PCL-Community')"
       )
       CardInfoItem(
-        icon="picPCLProto"
+        icon="https://www.amagicpear.sbs/PCL.Proto/PCL.Proto.svg"
         title="PCL.Proto"
         subtitle="本项目使用 PCL.Proto 作为前端"
         infoType="about"
