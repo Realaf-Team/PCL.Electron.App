@@ -36,7 +36,7 @@ var xaml = `
 const htmlString = `
 <div style="padding: 20px; background: #F8FAFC; border-radius: 5px; margin: 10px 0;">
 <h3>HTML测试</h3>  
-<iframe src="https://borisy.bar/chromedino/" style="width:100%; height:250px; border:none;"></iframe>
+<iframe src="https://blog.borisy.bar/chromedino/" style="width:100%; height:250px; border:none;"></iframe>
 </div>
 `
 
