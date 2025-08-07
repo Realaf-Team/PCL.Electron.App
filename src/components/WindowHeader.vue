@@ -35,6 +35,17 @@ const backClicked = () => {
     router.back()
   }
 }
+const minimize = () => {
+  window.electron.minimize() 
+}
+
+const close = () => {
+  window.electron.close()
+}
+
+const toggleMaximize = () => {
+  window.electron.toggleMaximize() 
+}
 </script>
 
 <template lang="pug">
@@ -42,7 +53,7 @@ const backClicked = () => {
     Transition(name="nav")
       .left(v-if="!isSubPage")
         img(src="@/assets/icons/TitleLogo.svg")
-        .title-tag Proto
+        .title-tag Electron
         .title-tag.dev(@click="isSubPage = !isSubPage") dev
       .left(v-else)
         i.button-animated(@click="backClicked")
@@ -58,8 +69,10 @@ const backClicked = () => {
             | {{ item.label }}
 
     .right
-      each icon in ['TitleMinimize', 'TitleClose']
-        i.button-animated: img(src=`@/assets/icons/${icon}.svg`)
+       i.button-animated(@click="minimize", title="最小化")
+        img(src="@/assets/icons/TitleMinimize.svg")
+       i.button-animated(@click="close", title="关闭")
+        img(src="@/assets/icons/TitleClose.svg")
 
 </template>
 
@@ -90,6 +103,8 @@ header {
   flex-shrink: 0;
   z-index: 4;
   position: relative;
+  
+  -webkit-app-region: drag;
 }
 
 header .left {
@@ -100,6 +115,8 @@ header .left {
   top: 0;
   height: 100%;
   align-items: center;
+  
+  -webkit-app-region: drag;
 }
 
 header .center {
@@ -118,6 +135,7 @@ header .right {
   top: 0;
   height: 100%;
   align-items: center;
+  -webkit-app-region: no-drag;
 }
 
 /* 窗口控制按钮外面的圆形 */
@@ -131,10 +149,12 @@ header .right {
   justify-content: center;
   background-color: transparent;
   transition: background-color 0.4s;
+  -webkit-app-region: no-drag;
 }
 
 .right i:hover,
 .left i:hover {
+  
   background-color: rgba(255, 255, 255, 0.25);
 }
 
@@ -148,6 +168,8 @@ header #main-nav {
   /* justify-self: center; */
   display: inline-flex;
   gap: 5px;
+  
+  -webkit-app-region: no-drag;
 }
 
 /* 导航栏元素 */

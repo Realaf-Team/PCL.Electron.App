@@ -30,11 +30,32 @@ import SvgDrawer from './components/website/SVGDrawer.vue'
 </template>
 
 <style scoped>
+#main-window {
+  /* 移除可能导致居中的属性 */
+  /* width: 814px; */
+  /* height: 464px; */
+  /* margin: auto; */ /* 如果有这行，一定要删除！ */
+
+  /* 改为固定定位，贴在左上角 */
+  position: fixed; /* 或者用 absolute */
+  top: 0;
+  left: 0;
+  width: 814px;
+  height: 464px;
+  border-radius: 8px;
+  background: linear-gradient(137.92deg, rgba(192, 196, 221, 1) 0%, rgba(182, 211, 220, 1) 100%);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  z-index: 1; /* 确保它在最上层 */
+  display: flex;
+  flex-direction: column;
+}
+
 #page {
   position: relative;
-  height: 100%;
+  flex: 1 1 0;
   width: 100%;
-  z-index: 2;
+  overflow: hidden;
 }
 
 #page > div.side-nav-background {
@@ -47,25 +68,6 @@ import SvgDrawer from './components/website/SVGDrawer.vue'
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
   transition: width 0.4s cubic-bezier(0.4, 1.8, 0.6, 1);
   z-index: -1;
-}
-
-#main-window {
-  width: 814px;
-  height: 464px;
-  border-radius: 8px;
-  background: linear-gradient(137.92deg, rgba(192, 196, 221, 1) 0%, rgba(182, 211, 220, 1) 100%);
-  box-shadow: var(--box-shadow);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-#page {
-  position: relative;
-  flex: 1 1 0;
-  width: 100%;
-  overflow: hidden;
 }
 </style>
 

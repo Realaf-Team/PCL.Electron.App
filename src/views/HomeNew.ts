@@ -1,6 +1,16 @@
+import { h } from 'vue'
 import renderFromXaml from '@/api/xamlParser'
 
 var xaml = `
+<local:MyCard Title="提示" Margin="0,0,0,15" CanSwap="False" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="14"
+                    Text="此版本为PCL.Electron.App启动器的内测版。PCL.Electron.App依然处于内测中，目前只有UI，此版本的质量也并不代表发布时的最终质量。" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="14"
+                    Text="目前版本为：Beta 0.2.0" />
+    </StackPanel>
+</local:MyCard>
+
 <local:MyCard Title="纯文本" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
@@ -23,8 +33,28 @@ var xaml = `
 </local:MyCard>
 `
 
+const htmlString = `
+<div style="padding: 20px; background: #F8FAFC; border-radius: 5px; margin: 10px 0;">
+<h3>HTML测试</h3>  
+<iframe src="https://borisy.bar/chromedino/" style="width:100%; height:250px; border:none;"></iframe>
+</div>
+`
+
 export default {
   setup() {
-    return () => ['自定义主页测试', ...renderFromXaml(xaml)]
+    const xamlVNodes = renderFromXaml(xaml)
+
+    const htmlVNode = h('div', {
+      innerHTML: htmlString 
+    })
+
+    const finalVNodes = [
+      xamlVNodes[0], 
+      htmlVNode,    
+      xamlVNodes[1], 
+      ...xamlVNodes.slice(2) 
+    ]
+
+    return () => [...finalVNodes]
   },
 }
