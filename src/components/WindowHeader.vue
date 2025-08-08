@@ -36,16 +36,22 @@ const backClicked = () => {
   }
 }
 const minimize = () => {
-  window.electron.minimize() 
-}
+  if (window.electron) {
+    window.electron.minimize();
+  }
+};
 
 const close = () => {
-  window.electron.close()
-}
+  if (window.electron) {
+    window.electron.close();
+  }
+};
 
 const toggleMaximize = () => {
-  window.electron.toggleMaximize() 
-}
+  if (window.electron) {
+    window.electron.toggleMaximize();
+  }
+};
 </script>
 
 <template lang="pug">

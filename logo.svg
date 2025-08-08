@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none">
+<rect x="0" y="0" width="1024" height="1024"   fill="#FFFFFF" fill-opacity="0">
+</rect>
+<!-- 主体多面体，使用深蓝紫色 -->
+<path d="M898.37 735.25L898.37 288.75L511.69 65.5L125.01 288.75L125.01 735.25L511.69 958.5L898.37 735.25Z"   fill="#1E1F80" >
+</path>
+<!-- 右侧高光面，使用明亮的青色渐变 -->
+<g filter="url(#filter_18_6)">
+<path d="M898.94 288.58L898.94 735.73L511.69 959.31L438.81 917.23L386.05 886.77L385.75 885.95L433.21 877.5L454.62 889.86L512.26 923.14L868.26 717.61L868.26 306.54L811.93 274.02L789.78 261.23L773.75 216.95L774.61 216.8L827.37 247.26L898.94 288.58Z"   fill="url(#linear_fill_18_7)" >
+</path>
+<!-- 右侧顶部能量面，使用品红到青色的渐变 -->
+<path d="M927.38 752L511.69 992L424.66 941.75L401.01 928.1L386.05 886.77L438.81 917.23L511.69 959.31L898.94 735.73L898.94 288.58L827.37 247.26L774.61 216.8L818.29 209.02L841.67 222.51L927.38 272L927.38 752Z"   fill="url(#linear_fill_18_8)" >
+</path>
+</g>
+<!-- 左侧高光面，使用紫色渐变 -->
+<g filter="url(#filter_18_9)">
+<path d="M637.06 138.11L590.81 146.35L568.59 133.52L512.26 101L156.27 306.54L156.27 717.61L211.1 749.26L232.43 761.58L248.87 807.01L248.13 807.14L195.29 776.64L124.44 735.73L124.44 288.58L511.69 65L584.04 106.77L636.73 137.19L637.06 138.11Z"   fill="url(#linear_fill_18_10)" >
+</path>
+<!-- 左侧顶部能量面，使用青色到品红的渐变 -->
+<path d="M584.04 106.77L511.69 65L124.44 288.58L124.44 735.73L195.29 776.64L248.13 807.14L204.86 814.85L181.14 801.15L96 752L96 272L388.656 103.034L511.69 32L598.32 82.02L621.62 95.47L636.73 137.19L584.04 106.77Z"   fill="url(#linear_fill_18_11)" >
+</path>
+</g>
+<!-- 内部菱形，使用稍亮的蓝紫色 -->
+<path d="M844.19 319.9L511.87 128.03L179.54 319.9L179.54 703.63L511.87 895.5L844.19 703.63L844.19 319.9Z"   fill="#3235CC" >
+</path>
+<!-- 内部矩形，使用青色渐变，代表核心能量 -->
+<path d="M814.19 686.46L814.19 336.85L511.42 162.05L208.65 336.85L208.65 686.46L511.42 861.26L814.19 686.46Z"   fill="url(#linear_fill_18_13)" >
+</path>
+<!-- "Electron" 文字 -->
+<g >
+<g filter="url(#filter_18_14)">
+<!-- 使用了新的文字路径，内容为 "Electron" --></g>
+</g>
+<!-- 左侧底部三角形，使用紫色渐变 -->
+<g filter="url(#filter_18_15)">
+<path d="M352.07 257.88L212.5 338.46L212.5 496.72L175.32 496.72L175.32 317L208.62 297.77L333.48 225.68L352.07 257.88Z"   fill="url(#linear_fill_18_15)" >
+</path>
+</g>
+<!-- 右侧底部三角形，使用品红色渐变 -->
+<g filter="url(#filter_18_16)">
+<path d="M671.43 765.47L811 684.89L811 526.63L848.18 526.63L848.18 706.35L814.88 725.58L690.02 797.67L671.43 765.47Z"   fill="url(#linear_fill_18_16)" >
+</path>
+</g>
+<!-- 底部矩形，代表平台，使用深蓝到亮青的渐变 -->
+<g filter="url(#filter_18_18)">
+<rect  x="347" y="600" width="329" height="147" rx="73.5"    fill="url(#linear_fill_18_18_0)" >
+</rect>
+</g>
+<g >
+<!-- 这里可以放置更多细节或留空 -->
+</g>
+<defs>
+<!-- 右侧高光渐变：青色 -->
+<linearGradient id="linear_fill_18_7" x1="898.93994140625" y1="588.0498046875" x2="467.86041259765625" y2="588.0498046875" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#00FFFF"  />
+<stop offset="1" stop-color="#00A0A0"  />
+</linearGradient>
+<!-- 右侧顶部能量渐变：品红到青色 -->
+<linearGradient id="linear_fill_18_8" x1="1000.260009765625" y1="398.2200164794922" x2="321.3800048828125" y2="790.1700439453125" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FF00FF"  />
+<stop offset="1" stop-color="#00FFFF"  />
+</linearGradient>
+<!-- 右侧高光阴影滤镜 -->
+<filter id="filter_18_6" x="381.75" y="207.02001953125" width="549.6300048828125" height="790.97998046875" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="feFloodId_18_6"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha_18_6"/>
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha_18_6" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="feFloodId_18_6" result="dropShadow_1_18_6"/>
+<feBlend mode="normal" in="SourceGraphic" in2="dropShadow_1_18_6" result="shape_18_6"/>
+</filter>
+<!-- 左侧高光渐变：紫色 -->
+<linearGradient id="linear_fill_18_10" x1="502.72039794921875" y1="219.55279541015625" x2="124.44000244140625" y2="436.07000732421875" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#A000FF"  />
+<stop offset="1" stop-color="#6000AA"  />
+</linearGradient>
+<!-- 左侧顶部能量渐变：青色到品红 -->
+<linearGradient id="linear_fill_18_11" x1="23.029998779296875" y1="625.6099853515625" x2="701.530029296875" y2="233.8800048828125" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#00FFFF"  />
+<stop offset="1" stop-color="#FF00FF"  />
+</linearGradient>
+<!-- 左侧高光阴影滤镜 -->
+<filter id="filter_18_9" x="92" y="30" width="549.06005859375" height="790.8499755859375" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="feFloodId_18_9"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha_18_9"/>
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha_18_9" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="feFloodId_18_9" result="dropShadow_1_18_9"/>
+<feBlend mode="normal" in="SourceGraphic" in2="dropShadow_1_18_9" result="shape_18_9"/>
+</filter>
+<!-- 内部核心渐变：青色 -->
+<linearGradient id="linear_fill_18_13" x1="310.62744140625" y1="226.1253662109375" x2="918.218017578125" y2="888.1039428710938" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#00D0D0"  />
+<stop offset="1" stop-color="#008080"  />
+</linearGradient>
+<!-- 文字阴影滤镜 -->
+<filter id="filter_18_14" x="231.22882080078125" y="292.5534210205078" width="582.7235717773438" height="307.4617919921875" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="feFloodId_18_14"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha_18_14"/>
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="32.5"/>
+<feComposite in2="hardAlpha_18_14" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.4470588235294118 0 0 0 0 0.403921568627451 0 0 0 0 0.9215686274509803 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="feFloodId_18_14" result="dropShadow_1_18_14"/>
+<feBlend mode="normal" in="SourceGraphic" in2="dropShadow_1_18_14" result="shape_18_14"/>
+</filter>
+<!-- 左侧底部三角形渐变：紫色 -->
+<linearGradient id="linear_fill_18_15" x1="175.32000732421875" y1="361.20018005371094" x2="352.07000732421875" y2="361.20018005371094" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#8000FF"  />
+<stop offset="1" stop-color="#C000C0"  />
+</linearGradient>
+<!-- 左侧底部三角形阴影滤镜 -->
+<filter id="filter_18_15" x="171.32000732421875" y="223.68017578125" width="184.75" height="279.0400085449219" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="feFloodId_18_15"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha_18_15"/>
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha_18_15" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="feFloodId_18_15" result="dropShadow_1_18_15"/>
+<feBlend mode="normal" in="SourceGraphic" in2="dropShadow_1_18_15" result="shape_18_15"/>
+</filter>
+<!-- 右侧底部三角形渐变：品红色 -->
+<linearGradient id="linear_fill_18_16" x1="671.429931640625" y1="662.1498870849609" x2="846.663818359375" y2="662.1498870849609" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FF0080"  />
+<stop offset="1" stop-color="#FF0040"  />
+</linearGradient>
+<!-- 右侧底部三角形阴影滤镜 -->
+<filter id="filter_18_16" x="667.429931640625" y="524.6298828125" width="184.75" height="279.0400085449219" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="feFloodId_18_16"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha_18_16"/>
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha_18_16" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="feFloodId_18_16" result="dropShadow_1_18_16"/>
+<feBlend mode="normal" in="SourceGraphic" in2="dropShadow_1_18_16" result="shape_18_16"/>
+</filter>
+<!-- 底部平台渐变：深蓝到亮青 -->
+<linearGradient id="linear_fill_18_18_0" x1="227.31998213199932" y1="755.0565591298677" x2="685.966282797393" y2="599.9999999999999" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#000080"  />
+<stop offset="1" stop-color="#00FFFF"  />
+</linearGradient>
+<!-- 底部平台阴影滤镜 -->
+<filter id="filter_18_18" x="327" y="580" width="369" height="187" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="feFloodId_18_18"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha_18_18"/>
+<feOffset dx="0" dy="0"/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha_18_18" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.7254901960784313 0 0 0 0 0.2823529411764706 0 0 0 0 0.12156862745098039 0 0 0 0.23 0"/>
+<feBlend mode="normal" in2="feFloodId_18_18" result="dropShadow_1_18_18"/>
+<feBlend mode="normal" in="SourceGraphic" in2="dropShadow_1_18_18" result="shape_18_18"/>
+</filter>
+</defs>
+</svg>

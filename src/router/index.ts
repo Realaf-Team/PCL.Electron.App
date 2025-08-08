@@ -18,6 +18,7 @@ import { selectedGame } from '@/util/gameLaunch'
 import HomeNew from '@/views/HomeNew'
 
 const router = createRouter({
+  // 使用 hash 模式，确保在 file:// 下可运行
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
@@ -87,7 +88,7 @@ const router = createRouter({
       name: 'version_select',
       component: VersionSelect,
       redirect: '/version_select/version_select_sub',
-      meta: { isSubPage: true, title: '实例选择' }, // 用于标识当前处于特殊子页面
+      meta: { isSubPage: true, title: '实例选择' },
       children: [
         {
           path: 'version_select_sub',
@@ -100,7 +101,7 @@ const router = createRouter({
       name: 'version_setting',
       component: VersionSetting,
       redirect: '/version_setting/overview',
-      meta: { isSubPage: true, title: '实例设置 - ' + selectedGame.name }, // 用于标识当前处于特殊子页面
+      meta: { isSubPage: true, title: '实例设置' }, // 👈 移除动态拼接
       children: [
         {
           path: 'overview',
@@ -109,6 +110,22 @@ const router = createRouter({
       ],
     },
   ],
+})
+
+router.beforeEach((to, from, next) => {
+  // 如果路由有 meta.title，则更新页面标题
+  if (to.meta.title) {
+    const title = to.meta.title as string
+    // 如果是实例设置，动态拼接游戏名
+    if (title === '实例设置') {
+      document.title = `实例设置 - ${selectedGame.name}`
+    } else {
+      document.title = title
+    }
+  } else {
+    document.title = 'PCL Electron' // 默认标题
+  }
+  next()
 })
 
 export default router

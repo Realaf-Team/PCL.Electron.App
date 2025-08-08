@@ -3,13 +3,14 @@ import CardInfoItem from '@/components/widget/CardInfoItem.vue'
 import MyCard from '@/components/widget/MyCard.vue'
 import PlainTextInfoItem from '@/components/widget/PlainTextInfoItem.vue'
 import picLongTengMaoYue from '@/assets/pictures/龙腾猫跃头像.jpg'
-import picPCLProto from '/PCL.Proto.svg?url'
+import picPCLProto from '@/assets/pictures/logo-icon.png'
 
 declare const __APP_VERSION__: string
 const version = __APP_VERSION__
 
 const isElectron = window && window.process && window.process.type
-const shell = isElectron ? (window.electron?.shell || require('electron').shell) : null
+
+const shell = isElectron ? window.electron?.shell : null
 
 const openExternal = (url: string) => {
   const cleanUrl = url.trim()
@@ -50,7 +51,7 @@ const openExternal = (url: string) => {
         @btn-click="() => openExternal('https://www.amagicpear.sbs/')"
       )
       CardInfoItem(
-        icon="https://raw.githubusercontent.com/Realaf-Team/PCL.Electron.App/refs/heads/master/pcl-ele.ico"
+        :icon="picPCLProto"
         title="Plain Craft Launcher: Edition Electron"
         :subtitle="`当前版本：${version}`"
         infoType="about"
